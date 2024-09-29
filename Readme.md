@@ -27,7 +27,7 @@ This is a Library Management System built with a focus on customer and book mana
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/library-management-system.git
+    git clone https://github.com/dopeWeb/Library-Management-System-frontend.git
     ```
 
 2. Install dependencies:
