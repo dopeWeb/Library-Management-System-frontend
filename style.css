@@ -1,0 +1,142 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+#wrap {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#main {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer {
+    height: 150px;
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 120px;
+    /* Increased margin for spacing */
+}
+
+h1,
+h2 {
+    margin-bottom: 35px;
+    /* Spacing below headings */
+}
+
+/* Collapsible Button Styles */
+.collapsible {
+    background-color: #007bff;
+    /* Blue background */
+    color: white;
+    /* White text for contrast */
+    cursor: pointer;
+    padding: 15px;
+    /* Increased padding */
+    width: 100%;
+    /* Full width */
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    /* Larger font size */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: background-color 0.3s;
+    /* Smooth transition */
+    margin: 10px 0;
+    /* Space between buttons */
+}
+
+.collapsible:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+/* Content Styles */
+.content {
+    padding: 15px;
+    /* Increased padding for content */
+    display: none;
+    /* Hidden by default */
+    overflow: hidden;
+    /* Hide overflow */
+    background-color: #e9f7ff;
+    /* Light blue background for content */
+    border: 1px solid #007bff;
+    /* Blue border */
+    border-radius: 5px;
+    /* Rounded corners */
+    margin-top: 10px;
+    /* Space between the button and content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+/* Input and Button Styles */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select {
+    width: calc(100% - 20px);
+    /* Full width with padding */
+    padding: 10px;
+    /* Internal padding */
+    margin: 10px 0;
+    /* Space between inputs */
+    border: 1px solid #007bff;
+    /* Blue border */
+    border-radius: 5px;
+    /* Rounded corners */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    /* Inner shadow */
+}
+
+/* Button Styles */
+button {
+    background-color: #007bff;
+    /* Blue background */
+    color: white;
+    /* White text */
+    padding: 10px 15px;
+    /* Internal padding */
+    border: none;
+    /* Remove default border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor */
+    transition: background-color 0.3s;
+    /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+/* Display Area for Books and Customers */
+#booksDisplay,
+#customersDisplay,
+#foundBooksDisplay,
+#foundCustomersDisplay {
+    margin-top: 10px;
+    /* Space above the display area */
+    padding: 10px;
+    /* Internal padding */
+    background-color: #f0f8ff;
+    /* Very light blue background */
+    border-radius: 5px;
+    /* Rounded corners */
+    border: 1px solid #ccc;
+    /* Light border */
+}

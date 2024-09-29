@@ -1,0 +1,134 @@
+.carousel-item img {
+    width: 200px;
+    /* Set the desired width */
+    height: 304px;
+    /* Set the desired height */
+    object-fit: contain;
+    /* Maintain aspect ratio and fit the entire image */
+    display: block;
+    /* Ensure image is displayed as block */
+    margin: 0 auto;
+    /* Center the image */
+}
+
+.carousel-caption {
+    text-align: center;
+    /* Center text */
+    position: relative;
+    /* Change to relative positioning */
+    color: #000;
+    /* Text color */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* Font family */
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Light background for contrast */
+    padding: 10px;
+    /* Padding around text */
+    border-radius: 5px;
+    /* Rounded corners */
+    width: 80%;
+    /* Width of caption */
+    left: 50%;
+    /* Center horizontally */
+    transform: translateX(-50%);
+    /* Adjust to center */
+    margin-top: 10px;
+    /* Add space above caption */
+    
+}
+
+.carousel-item {
+    text-align: center;
+    /* Center the item content */
+}
+
+/* Optional: Adjust font size for headings and paragraphs */
+.carousel-caption h1 {
+    font-size: 1.5em;
+    /* Heading font size */
+    margin-bottom: 10px;
+    /* Space below heading */
+}
+
+.carousel-caption p {
+    font-size: 1em;
+    /* Paragraph font size */
+    margin: 0;
+    /* Remove default margin */
+}
+
+
+.carousel-control-prev {
+    color: #000;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    /* Change arrow background to black */
+    border-radius: 50%;
+    /* Optional: make the icon circular */
+}
+
+.carousel-control-prev-icon:after,
+.carousel-control-next-icon:after {
+    color: white;
+    /* Change the arrow color to white for better visibility */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    filter: invert(0);
+    /* Ensure arrows are not inverted */
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    height: 80vh;
+    /* Full viewport height */
+}
+
+.card {
+    width: 18rem;
+    /* Keep your card width */
+    /* Add other styles if needed */
+}
+
+.container {
+    min-height: calc(100vh - 56px);
+    /* Adjust 56px based on your navbar height */
+    padding-bottom: 50px;
+    /* Space for the footer */
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+}
+
+
+.footer {
+    height: 150px;
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
+
