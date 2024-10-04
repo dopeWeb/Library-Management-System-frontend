@@ -15,6 +15,27 @@ const showToast = (message, type = 'success') => {
     }).showToast();
 };
 
+
+const displayToastOnceForBooks = () => {
+    // Check if the toast for displaying books has been shown in this session
+    if (!sessionStorage.getItem('toastShownForBooks')) {
+        // Show the toast message
+        showToast("This may take a few seconds", 'info');
+        // Mark that the toast has been shown for books
+        sessionStorage.setItem('toastShownForBooks', 'true');
+    }
+};
+
+const displayToastOnceForCustomers = () => {
+    // Check if the toast for displaying customers has been shown in this session
+    if (!sessionStorage.getItem('toastShownForCustomers')) {
+        // Show the toast message
+        showToast("This may take a few seconds", 'info');
+        // Mark that the toast has been shown for customers
+        sessionStorage.setItem('toastShownForCustomers', 'true');
+    }
+};
+
 const formatAge = (age) => {
     return age > 999 ? 999 : age; // Limit age to a maximum of 3 digits
 };
@@ -156,7 +177,7 @@ const returnBook = () => {
 };
 
 const displayAllBooks = () => {
-    showToast("This may take a few seconds", 'info'); 
+    displayToastOnceForBooks(); // Show the toast only once for books
 
     axios.get(SERVER + 'display_all_books')
         .then(response => {
@@ -164,16 +185,14 @@ const displayAllBooks = () => {
             booksDisplay.innerHTML = "<ul>" + response.data.map(book =>
                 `<li>Name: ${book.name}, Author: ${book.author}, Year Published: ${book.yearPublished}, Type: ${book.type}</li>`
             ).join('') + "</ul>";
-         
         })
         .catch(error => {
             showToast("Error fetching books.", 'error');
-      
         });
 };
 
 const displayAllCustomers = () => {
-    showToast("This may take a few seconds", 'info'); 
+    displayToastOnceForCustomers(); // Show the toast only once for customers
 
     axios.get(SERVER + 'display_all_customers')
         .then(response => {
@@ -181,13 +200,13 @@ const displayAllCustomers = () => {
             customersDisplay.innerHTML = "<ul>" + response.data.map(customer =>
                 `<li>Name: ${customer.name}, City: ${customer.city}, Age: ${customer.age}, Email: ${customer.email}</li>`
             ).join('') + "</ul>";
-
         })
         .catch(error => {
             showToast("Error fetching customers.", 'error');
-
         });
 };
+
+
 
 const displayAllLoans = () => {
     axios.get(SERVER + 'display_all_loans')
@@ -590,3 +609,4 @@ const handleError = (error) => {
         showToast("Error: " + error.message, 'error');
     }
 };
+
