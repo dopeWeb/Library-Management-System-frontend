@@ -36,34 +36,51 @@ h2 {
 
 /* Collapsible Button Styles */
 .collapsible {
-    background-color: #4CAF50; /* Green background */
-    color: white; /* White text for contrast */
+    background-color: #4CAF50;
+    /* Green background */
+    color: white;
+    /* White text for contrast */
     cursor: pointer;
-    padding: 15px; /* Increased padding */
-    width: 100%; /* Full width */
+    padding: 15px;
+    /* Increased padding */
+    width: 100%;
+    /* Full width */
     border: none;
     text-align: left;
     outline: none;
-    font-size: 16px; /* Larger font size */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s; /* Smooth transition */
-    margin: 10px 0; /* Space between buttons */
+    font-size: 16px;
+    /* Larger font size */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: background-color 0.3s;
+    /* Smooth transition */
+    margin: 10px 0;
+    /* Space between buttons */
 }
 
 .collapsible:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #058b0a;
+    /* Darker green on hover */
 }
 
 /* Content Styles */
 .content {
-    padding: 15px; /* Increased padding for content */
-    display: none; /* Hidden by default */
-    overflow: hidden; /* Hide overflow */
-    background-color: #f9f9f9; /* Light background for content */
-    border: 1px solid #e0e0e0; /* Light border */
-    border-radius: 5px; /* Rounded corners */
-    margin-top: 10px; /* Space between the button and content */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 15px;
+    /* Increased padding for content */
+    display: none;
+    /* Hidden by default */
+    overflow: hidden;
+    /* Hide overflow */
+    background-color: #e9f7ec;
+    /* Light green background for content */
+    border: 1px solid #4CAF50;
+    /* Green border */
+    border-radius: 5px;
+    /* Rounded corners */
+    margin-top: 10px;
+    /* Space between the button and content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
 }
 
 /* Input and Button Styles */
@@ -71,26 +88,41 @@ input[type="text"],
 input[type="number"],
 input[type="email"],
 select {
-    width: calc(100% - 20px); /* Full width with padding */
-    padding: 10px; /* Internal padding */
-    margin: 10px 0; /* Space between inputs */
-    border: 1px solid #ccc; /* Light border */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Inner shadow */
+    width: calc(100% - 20px);
+    /* Full width with padding */
+    padding: 10px;
+    /* Internal padding */
+    margin: 10px 0;
+    /* Space between inputs */
+    border: 1px solid #4CAF50;
+    /* Green border */
+    border-radius: 5px;
+    /* Rounded corners */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    /* Inner shadow */
 }
 
+/* Button Styles */
 button {
-    background-color: #45a049; /* Bootstrap primary blue */
-    color: white; /* White text */
-    padding: 10px 15px; /* Internal padding */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor */
-    transition: background-color 0.3s; /* Smooth transition */
+    background-color: #4CAF50;
+    /* Green background */
+    color: white;
+    /* White text */
+    padding: 10px 15px;
+    /* Internal padding */
+    border: none;
+    /* Remove default border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor */
+    transition: background-color 0.3s;
+    /* Smooth transition */
 }
 
 button:hover {
-    background-color: #45a049; /* Darker blue on hover */
+    background-color: #3e8e41;
+    /* Darker green on hover */
 }
 
 /* Display Area for Books and Customers */
@@ -98,9 +130,14 @@ button:hover {
 #customersDisplay,
 #foundBooksDisplay,
 #foundCustomersDisplay {
-    margin-top: 10px; /* Space above the display area */
-    padding: 10px; /* Internal padding */
-    background-color: #f0f0f0; /* Light grey background */
-    border-radius: 5px; /* Rounded corners */
-    border: 1px solid #ccc; /* Light border */
+    margin-top: 10px;
+    /* Space above the display area */
+    padding: 10px;
+    /* Internal padding */
+    background-color: #e9f7ec;
+    /* Light green background */
+    border-radius: 5px;
+    /* Rounded corners */
+    border: 1px solid #4CAF50;
+    /* Green border */
 }
