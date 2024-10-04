@@ -16,22 +16,20 @@ const showToast = (message, type = 'success') => {
 };
 
 
-const displayToastOnceForBooks = () => {
-    // Check if the toast for displaying books has been shown in this session
+const showToastOnceForBooks = () => {
     if (!sessionStorage.getItem('toastShownForBooks')) {
         // Show the toast message
         showToast("This may take a few seconds", 'info');
-        // Mark that the toast has been shown for books
+        // Mark that the toast has been shown for books in this session
         sessionStorage.setItem('toastShownForBooks', 'true');
     }
 };
 
-const displayToastOnceForCustomers = () => {
-    // Check if the toast for displaying customers has been shown in this session
+const showToastOnceForCustomers = () => {
     if (!sessionStorage.getItem('toastShownForCustomers')) {
         // Show the toast message
         showToast("This may take a few seconds", 'info');
-        // Mark that the toast has been shown for customers
+        // Mark that the toast has been shown for customers in this session
         sessionStorage.setItem('toastShownForCustomers', 'true');
     }
 };
@@ -177,7 +175,7 @@ const returnBook = () => {
 };
 
 const displayAllBooks = () => {
-    displayToastOnceForBooks(); // Show the toast only once for books
+    showToastOnceForBooks(); // Show the toast only once for books
 
     axios.get(SERVER + 'display_all_books')
         .then(response => {
@@ -192,7 +190,7 @@ const displayAllBooks = () => {
 };
 
 const displayAllCustomers = () => {
-    displayToastOnceForCustomers(); // Show the toast only once for customers
+    showToastOnceForCustomers(); // Show the toast only once for customers
 
     axios.get(SERVER + 'display_all_customers')
         .then(response => {
@@ -609,4 +607,5 @@ const handleError = (error) => {
         showToast("Error: " + error.message, 'error');
     }
 };
+
 
