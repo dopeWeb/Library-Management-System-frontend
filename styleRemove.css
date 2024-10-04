@@ -33,10 +33,9 @@ h2 {
     /* Spacing below headings */
 }
 
-
 /* Collapsible Button Styles */
 .collapsible {
-    background-color: #b60f0f; /* Red background */
+    background-color: #d4170a; /* Red background */
     color: white; /* White text for contrast */
     cursor: pointer;
     padding: 15px; /* Increased padding */
@@ -51,7 +50,7 @@ h2 {
 }
 
 .collapsible:hover {
-    background-color: #b60f0f; /* Darker red on hover */
+    background-color: #960e0e; /* Darker red on hover */
 }
 
 /* Content Styles */
@@ -59,8 +58,8 @@ h2 {
     padding: 15px; /* Increased padding for content */
     display: none; /* Hidden by default */
     overflow: hidden; /* Hide overflow */
-    background-color: #f9f9f9; /* Light background for content */
-    border: 1px solid #e0e0e0; /* Light border */
+    background-color: #ffebee; /* Light red background for content */
+    border: 1px solid #d42013; /* Red border */
     border-radius: 5px; /* Rounded corners */
     margin-top: 10px; /* Space between the button and content */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
@@ -74,13 +73,14 @@ select {
     width: calc(100% - 20px); /* Full width with padding */
     padding: 10px; /* Internal padding */
     margin: 10px 0; /* Space between inputs */
-    border: 1px solid #ccc; /* Light border */
+    border: 1px solid #f44336; /* Red border */
     border-radius: 5px; /* Rounded corners */
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Inner shadow */
 }
 
+/* Button Styles */
 button {
-    background-color: #c20a0a; /* Bootstrap primary blue */
+    background-color: #f44336; /* Red background */
     color: white; /* White text */
     padding: 10px 15px; /* Internal padding */
     border: none; /* Remove default border */
@@ -90,7 +90,7 @@ button {
 }
 
 button:hover {
-    background-color: #c20a0a; /* Darker blue on hover */
+    background-color: #a51717; /* Darker red on hover */
 }
 
 /* Display Area for Books and Customers */
@@ -100,7 +100,7 @@ button:hover {
 #foundCustomersDisplay {
     margin-top: 10px; /* Space above the display area */
     padding: 10px; /* Internal padding */
-    background-color: #f0f0f0; /* Light grey background */
+    background-color: #ffebee; /* Light red background */
     border-radius: 5px; /* Rounded corners */
-    border: 1px solid #ccc; /* Light border */
+    border: 1px solid #f44336; /* Red border */
 }
